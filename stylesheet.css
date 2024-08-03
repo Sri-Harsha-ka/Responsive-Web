@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    height: 5vw;
+    width: 100%;  
+}
+.nav-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 1.2vw;
+    border-bottom: 1px solid lightgray;
+}
+
+.Logo{
+    font-size: 1.6vw;
+    font-weight: 800;
+    font-family: Arial;
+}
+
+#box{
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.2vw;
+    font-family: Arial;    
+}
+.MenuImage{
+    display: none;
+}
+
+main{
+   display: flex;
+   justify-content: space-evenly;
+   width: 100%;
+   height: calc(100% - 5vw);
+}
+.sec-1{
+    width: 55%;
+    padding-left: 5vw;
+    padding-top: 4vw;
+}
+.sec-1 h1{
+    font-size: 4vw;
+}
+h1 p{
+    padding-top: 1vw;
+    font-weight: 600;
+    font-family:  monospace;
+}
+.highlight{
+    color: lightseagreen;
+    font-weight: 900;
+}
+.sec-2{
+    width: 44%;
+    padding-right: 10vw;
+    padding-top: 4vw;
+}
+.sec-2-img{
+    width: 43vw;
+}
+.para{
+    padding-top: 4vw;
+    font-size: 1.3vw;
+    font-weight: 300;
+    font-family: Arial ;
+    width: 85%;
+    padding-bottom: 2vw;
+}
+.main-button{
+    padding: 1vw 2vw;
+    background-color: lightseagreen;
+    border-radius: 10px;
+    border: 1px solid lightseagreen;
+    color: white;
+    margin-left: 4vw;
+    font-size: 1vw;
+    cursor: pointer ;
+}
+.nav-button{
+    padding: 0.6vw 1.1vw;
+    background-color: lightseagreen;
+    border-radius: 6px;
+    border: 1px solid lightseagreen;
+    color: white;
+    font-size: 1vw;
+    cursor: pointer ;
+}
+
+
+
+@media (max-width:600px) {
+    nav{
+        height: 15vw;
+    }
+    .nav-2{
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+        padding-left: 8vw;
+        padding-right: 10vw;
+        /* background-color: lightseagreen; */
+        /* color: white; */
+    }
+    .Logo{
+        font-size: 10vw;
+        font-weight: 800;
+        font-family: Arial;
+    }
+    .MenuImage{
+        display: block;
+        width: 6vw;
+        /* filter: invert(100%); */
+    }
+    #box{
+        display: none;
+    }
+    main{
+        width: 95%;
+        height: calc(100% - 16vw);
+        padding-left: 0vw;
+        padding-right: 2%;
+        padding-top: 10vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .sec-1{
+
+        width: 95%;
+        font-size: 6vw;
+    }
+    .head-1{
+        display: none;
+    }
+    .sec-1 h1{
+        font-size: 15vw;
+    }
+    .para{
+        font-size: 3vw;
+    }
+    .main-button{
+        margin-top: 4vw;
+        height: 6vw;
+        font-size: 3vw;
+        font-weight: 700;
+    }
+    .sec-2{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec-2-img{
+        width: 100vw;
+        margin-right: 25vw;
+    }
+}
